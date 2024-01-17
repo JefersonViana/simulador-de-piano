@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <title>Simulador De Teclado</title>
+</head>
+<body>
+  <div class="base-piano">
+    <div class="config-piano">
+      <h3 id="title">Virtual Piano</h3>
+      <div class="volume">
+        <label for="input-volume">Volume</label>
+        <input type="range" name="volume" id="input-volume" min="0" max="100" value="50">
+      </div>
+      <div class="switch-slider">
+        <label for="switch-redondo">Teclas</label>
+        <div id="switch-quadrado">
+          <input type="checkbox" id="switch-redondo" checked />
+        </div>
+      </div>
+    </div>
+    <div class="teclado">
+      <div class="key brancas" data-key="A"><span class="piano-teclas">A</span></div>
+      <div class="key pretas" data-key="W"><span class="piano-teclas">W</span></div>
+      <div class="key brancas" data-key="S"><span class="piano-teclas">S</span></div>
+      <div class="key pretas" data-key="E"><span class="piano-teclas">E</span></div>
+      <div class="key brancas" data-key="D"><span class="piano-teclas">D</span></div>
+      <div class="key pretas" data-key="F"><span class="piano-teclas">F</span></div>
+      <div class="key brancas" data-key="T"><span class="piano-teclas">T</span></div>
+      <div class="key pretas" data-key="G"><span class="piano-teclas">G</span></div>
+      <div class="key brancas" data-key="Y"><span class="piano-teclas">Y</span></div>
+      <div class="key pretas" data-key="H"><span class="piano-teclas">H</span></div>
+      <div class="key brancas" data-key="U"><span class="piano-teclas">U</span></div>
+      <div class="key pretas" data-key="J"><span class="piano-teclas">J</span></div>
+      <div class="key brancas" data-key="K"><span class="piano-teclas">K</span></div>
+      <div class="key pretas" data-key="O"><span class="piano-teclas">O</span></div>
+      <div class="key brancas" data-key="L"><span class="piano-teclas">L</span></div>
+      <div class="key pretas" data-key="P"><span class="piano-teclas">P</span></div>
+      <div class="key brancas" data-key=";"><span class="piano-teclas">;</span></div>
+    </div>
+  </div>
+  <script defer src="./src/scripts/main.js"></script>
+</body>
+</html>
