@@ -9,602 +9,22 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 480px) {
-
-  .base-piano {
-    transform: rotate(90deg);
-    background-color: #000;
-    width: 100%;
-    height: 50%;
-    padding: 1rem;
-    border-radius: 5%;
-  }
-
-  .config-piano {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-  }
-
-  #title {
-    font-size: .8rem;
-  }
-
-  .volume {
-    width: 35%;
-    font-size: .8rem;
-  }
-  
-  #input-volume {
-    accent-color: #fff;
-    width: 40%;
-  }
-
-  .switch-slider {
-    width: 32%;
-    display: flex;
-  }
-
-  #switch-quadrado {
-    width: 3rem;
-    height: 1.5rem;
-    background: #888888;
-    margin-left: .8rem;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 0px 2px;
-  }
-  #switch-redondo {
-    width: 1rem;
-    height: 1rem;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-  }
-  
-  #switch-redondo::before {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #525151;
-    top: 50%;
-    position: absolute;
-    border-radius: inherit;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  #switch-redondo:checked::before {
-    left: 1.6rem;
-    background: #fff;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  .teclado {
-    display: flex;
-    height: 19rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-
-  .brancas {
-    width: 80px;
-    height: 100%;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-  }
-
-  .pretas {
-    width: 40px;
-    height: 50%;
-    background: #000;
-    display: flex;
-    z-index: 2;
-    margin: 0 -10px 0 -10px;
-    justify-content: center;
-    align-items: end;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-  .base-piano {
-    background-color: #000;
-    width: 90%;
-    height: 35%;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config-piano {
-    color: #fff;
-    display: flex;
-    width: 96%;
-    margin-left: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-  }
-
-  #title {
-    font-size: 1.5rem;
-  }
-
-  .volume {
-    width: 30%;
-    font-size: 1.4rem;
-    margin-left: 3rem;
-  }
-  
-  #input-volume {
-    accent-color: #fff;
-    width: 40%;
-  }
-
-  .switch-slider {
-    width: 20%;
-    display: flex;
-  }
-
-  .switch-slider label {
-    font-size: 1.4rem;
-  }
-
-  #switch-quadrado {
-    width: 3rem;
-    height: 1.5rem;
-    background: #888888;
-    margin-left: .8rem;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 0px 2px;
-  }
-  #switch-redondo {
-    width: 1rem;
-    height: 1rem;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-  }
-  
-  #switch-redondo::before {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #525151;
-    top: 50%;
-    position: absolute;
-    border-radius: inherit;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  #switch-redondo:checked::before {
-    left: 1.6rem;
-    background: #fff;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  .teclado {
-    display: flex;
-    height: 19rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-
-  .brancas {
-    width: 142px;
-    height: 100%;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-  }
-  
-  .pretas {
-    width: 40px;
-    height: 50%;
-    background: #000;
-    display: flex;
-    z-index: 2;
-    margin: 0 -10px 0 -10px;
-    justify-content: center;
-    align-items: end;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1000px) {
-
-  .base-piano {
-    background-color: #000;
-    width: 90%;
-    height: 35%;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config-piano {
-    color: #fff;
-    display: flex;
-    width: 96%;
-    margin-left: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-  }
-
-  #title {
-    font-size: 1.5rem;
-  }
-
-  .volume {
-    width: 30%;
-    font-size: 1.4rem;
-    margin-left: 3rem;
-  }
-  
-  #input-volume {
-    accent-color: #fff;
-    width: 40%;
-  }
-
-  .switch-slider {
-    width: 20%;
-    display: flex;
-  }
-
-  .switch-slider label {
-    font-size: 1.4rem;
-  }
-
-  #switch-quadrado {
-    width: 3rem;
-    height: 1.5rem;
-    background: #888888;
-    margin-left: .8rem;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 0px 2px;
-  }
-  #switch-redondo {
-    width: 1rem;
-    height: 1rem;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-  }
-  
-  #switch-redondo::before {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #525151;
-    top: 50%;
-    position: absolute;
-    border-radius: inherit;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  #switch-redondo:checked::before {
-    left: 1.6rem;
-    background: #fff;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  .teclado {
-    display: flex;
-    height: 19rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-
-  .brancas {
-    width: 15rem;
-    height: 26rem;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-  }
-  
-  .pretas {
-    width: 40px;
-    height: 13rem;
-    background: #000;
-    display: flex;
-    z-index: 2;
-    margin: 0 -10px 0 -10px;
-    justify-content: center;
-    align-items: end;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
-
-  .base-piano {
-    background-color: #000;
-    width: 75%;
-    height: 60%;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config-piano {
-    color: #fff;
-    display: flex;
-    width: 96%;
-    margin-left: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-  }
-
-  #title {
-    font-size: 1.5rem;
-  }
-
-  .volume {
-    width: 30%;
-    font-size: 1.4rem;
-    margin-left: 3rem;
-  }
-  
-  #input-volume {
-    accent-color: #fff;
-    width: 40%;
-  }
-
-  .switch-slider {
-    width: 20%;
-    display: flex;
-  }
-
-  .switch-slider label {
-    font-size: 1.4rem;
-  }
-
-  #switch-quadrado {
-    width: 3rem;
-    height: 1.5rem;
-    background: #888888;
-    margin-left: .8rem;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 0px 2px;
-  }
-  #switch-redondo {
-    width: 1rem;
-    height: 1rem;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-  }
-  
-  #switch-redondo::before {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #525151;
-    top: 50%;
-    position: absolute;
-    border-radius: inherit;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  #switch-redondo:checked::before {
-    left: 1.6rem;
-    background: #fff;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  .teclado {
-    display: flex;
-    height: 19rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-
-  .brancas {
-    width: 15rem;
-    height: 20rem;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-  }
-  
-  .pretas {
-    width: 60px;
-    height: 10rem;
-    background: #000;
-    display: flex;
-    z-index: 2;
-    margin: 0 -10px 0 -10px;
-    justify-content: center;
-    align-items: end;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
-
-  .base-piano {
-    background-color: #000;
-    width: 75%;
-    height: 50%;
-    padding: 1rem;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config-piano {
-    color: #fff;
-    display: flex;
-    width: 96%;
-    margin-left: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-  }
-
-  #title {
-    font-size: 1.5rem;
-  }
-
-  .volume {
-    width: 30%;
-    font-size: 1.4rem;
-    margin-left: 3rem;
-  }
-  
-  #input-volume {
-    accent-color: #fff;
-    width: 40%;
-  }
-
-  .switch-slider {
-    width: 20%;
-    display: flex;
-  }
-
-  .switch-slider label {
-    font-size: 1.4rem;
-  }
-
-  #switch-quadrado {
-    width: 3rem;
-    height: 1.5rem;
-    background: #888888;
-    margin-left: .8rem;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 0px 2px;
-  }
-  #switch-redondo {
-    width: 1rem;
-    height: 1rem;
-    appearance: none;
-    cursor: pointer;
-    position: relative;
-    border-radius: 50%;
-  }
-  
-  #switch-redondo::before {
-    content: '';
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #525151;
-    top: 50%;
-    position: absolute;
-    border-radius: inherit;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  #switch-redondo:checked::before {
-    left: 1.6rem;
-    background: #fff;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  
-  .teclado {
-    display: flex;
-    height: 19rem;
-    margin: 0 1rem;
-    border-radius: 10px;
-  }
-
-  .brancas {
-    width: 19rem;
-    height: 24rem;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-  }
-  
-  .pretas {
-    width: 60px;
-    height: 12rem;
-    background: #000;
-    display: flex;
-    z-index: 2;
-    margin: 0 -10px 0 -10px;
-    justify-content: center;
-    align-items: end;
-    color: #fff;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-}
-
 .base-piano {
-  background-color: #000;
-  width: 75%;
+  background-color: #000000b3;
+  width: 65%;
   height: 60%;
-  padding: 1rem;
-  border-radius: 5%;
+  padding: 1rem 0;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
 }
 
 .config-piano {
   color: #fff;
   display: flex;
-  width: 96%;
-  margin-left: 1rem;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
@@ -615,14 +35,23 @@ body {
 }
 
 .volume {
-  width: 30%;
+  width: 200px;
+  height: 40px;
   font-size: 1.4rem;
   margin-left: 3rem;
+  background-image: url('../assets/volume.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
 }
 
 #input-volume {
-  accent-color: #fff;
-  width: 40%;
+  accent-color: #000;
+  width: 85%;
+  height: 40px;
+  margin-left: 3px;
 }
 
 .switch-slider {
@@ -674,14 +103,15 @@ body {
 
 .teclado {
   display: flex;
-  height: 19rem;
-  margin: 0 1rem;
+  width: 66.5%;
+  height: 18rem;
+  margin-top: 2rem;
   border-radius: 10px;
 }
 
 .brancas {
-  width: 50rem;
-  height: 22rem;
+  width: 6rem;
+  height: 18rem;
   background: #fff;
   border: 1px solid #000;
   color: #000;
@@ -692,8 +122,8 @@ body {
 }
 
 .pretas {
-  width: 9.5rem;
-  height: 11rem;
+  width: 1.7rem;
+  height: 10rem;
   background: #000;
   display: flex;
   z-index: 2;
